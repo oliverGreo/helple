@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Helple",
+    "version": "1.0",
+    "description": "Makes using loldle and similar easier.",
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.loldle.net/*",
+                "*://*.pokedle.net/*",
+                "*://*.smashdle.net/*"
+            ],
+            "js": [
+                "helple.js"
+            ]
+        }
+    ]
+}
